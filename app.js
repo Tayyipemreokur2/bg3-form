@@ -1,7 +1,7 @@
 ﻿// ============================================
 // APP.JS - Tüm Sayfalar İçin Ortak JS Dosyası (BG3 Temalı)
 // ============================================
-
+2
 document.addEventListener("DOMContentLoaded", () => {
     // Sayfa Türlerini Belirle
     const isIndex = document.body.classList.contains('page-index');
@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if ((isForum || isStaj || isIletisim) && typeof window.supabase !== 'undefined') {
         // BURAYA KENDİ URL VE KEY'İNİZİ GİRİN
-        const SUPABASE_URL = 'https://dwfqirfxabkzlbtznxol.supabase.co';
-        const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3ZnFpcmZ4YWJremxidHpueG9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4Nzg5NjUsImV4cCI6MjA5MzQ1NDk2NX0.cRScFxU83sWQ-Eq9KmWRpYmleS3LVXjOeQ6YeLEVKdQ';
+        const SUPABASE_URL = '';
+        const SUPABASE_ANON = '';
         const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
 
         let currentUsername = 'Maceracı';
@@ -472,8 +472,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (isAuth && isLoginForm && typeof window.supabase !== 'undefined') {
-        const SUPABASE_URL = 'https://dwfqirfxabkzlbtznxol.supabase.co';
-        const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3ZnFpcmZ4YWJremxidHpueG9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4Nzg5NjUsImV4cCI6MjA5MzQ1NDk2NX0.cRScFxU83sWQ-Eq9KmWRpYmleS3LVXjOeQ6YeLEVKdQ';
+        const SUPABASE_URL = '';
+        const SUPABASE_ANON = '';
         const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
 
         function showAlert(msg, type) {
@@ -570,8 +570,8 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('alert').style.display = 'block';
             document.getElementById('register-btn').disabled = true;
         } else {
-            const SUPABASE_URL = 'https://dwfqirfxabkzlbtznxol.supabase.co';
-            const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3ZnFpcmZ4YWJremxidHpueG9sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4Nzg5NjUsImV4cCI6MjA5MzQ1NDk2NX0.cRScFxU83sWQ-Eq9KmWRpYmleS3LVXjOeQ6YeLEVKdQ';
+            const SUPABASE_URL = '';
+            const SUPABASE_ANON = '';
             const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
 
             let selectedFile = null;
